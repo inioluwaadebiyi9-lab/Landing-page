@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewFYProject</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+</head>
+<body>
+     <!..............header.................>
+    <header class="header">
+  <div class="navmenu">
+     <a href="index.html" >
+        <img src="./Images/logo3.png" alt="logo" ></a>
+ <i class="bx bx-menu" id="menuBtn" onclick="openMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="bx bx-window-close" id="closeBtn" onclick="closeMenu()" ></i> 
+    </ul>
+</div>
+    </header> 
+
+  <!..............Sub-header sessoin.................>
+  <section class="sub-header" id="sub-header">
+<h1 class="h-cent">About <span>  Me</span></h1>
+  </section>
+  
+
+<!............. About sessoin ............>
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="./images/image3.png" alt="">
+  </div>
+<div class="about-text">
+
+<h4 class="h-centre"><span>I am a</span> Design Technologist</h4>
+<p>Who loves creating effective and amazing user experiences,with a
+  passion for technology and a knack fof problem solving.I'm always looking for 
+  new and creative way to bring ideas to life <br><br>
+  With my expertise in technology,design and creativity,I empower people to make 
+  control of their destiny and build the life they want.  Whether it's learning to code,
+  designing a website or simply expanding their horizons,i'm here to support
+  them every step of the way.<br><br>
+  When i'm not working on the latest design project,you can find me doing things I love,
+  like coding,making research and telling story.I believe in the power of balance,
+  and i make sure to take time for the things that bring me joy.This approach help me
+  bring fresh idea and a positive attitude to every project I take on.
+</p>
+   <a href="#" class="btn">Let's Talk</a>
+</div>
+</section>
+
+<section class="others" id="others">
+  <div class="sub-text-title">
+    <h2>Why <span>me?</span></h2>
+  </div>
+  <div class="others-img">
+    <img src="./Images/logo3.png" alt="">
+    <span class="circle-spin"></span>
+  </div>
+  <div class="othes-text">
+    <h3><span>As</span> a Design Technologist and a web development trainer</h3>
+    <p>- I bring a unique perspective to my work, combining technical expertise with creative vision.<br><br>
+       - I understand that each person and each project is unique,and i talored my aproach to meet individual needs.<br><br>
+       - I help people achieve their full potential and make their dreams a reality.
+    </p>
+  </div>
+  <div> <a href="#" class="btn">Hire me</a></div>
+</section>
+
+
+
+  <!.............Footer sessoin............>
+  <foooter class="footer">
+    <div class="attribution">
+      <p>Design with <i class="bx bx-heart"></i> By Heritage</p>
+    </div>
+    <div class="move-up">
+      <a href="#sub-header"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </foooter>
+
+   <!.............js for toggle menu............>
+   <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+      navLinks.style.right="0"; // slide in
+    }
+
+    function closeMenu(){
+      navLinks.style.right="-200px"; // slide out
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewFYProject</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+</head>
+<body>
+     <!..............header.................>
+    <header class="header">
+  <div class="navmenu">
+     <a href="index.html" >
+        <img src="./Images/logo3.png" alt="logo" ></a>
+ <i class="bx bx-menu" id="menuBtn" onclick="openMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="bx bx-window-close" id="closeBtn" onclick="closeMenu()" ></i> 
+    </ul>
+</div>
+    </header> 
+
+  <!..............Sub-header sessoin.................>
+  <section class="sub-header" id="sub-header">
+<h1><span>Recent</span> Project</h1>
+  </section>
+
+  <!............. Portfolio sessoin ............>
+  <section class="portfolio";>
+    <div class="text-title">
+    <h2>Frontend Development<span> Projects</span></h2>
+  </div>
+<div class="portfolio-content">
+  <div class="row">
+    <img src="Images/Frontend5.jpg" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">I'm proficient in HTML,CSS and JavaScript.Let's
+      build a realworking and functioning website together.</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+  <div class="row">
+    <img src="Images/Frontend3.jpg" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">I'm proficient in HTML,CSS and JavaScript.Let's
+      build a realworking and functioning website together..</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+</div>
+  </section>
+
+  <section class="portfolio" id="portfoli";>
+    <div class="text-title">
+    <h2>UI/UX Design<span> Recent</span> Projects</h2>
+  </div>
+<div class="portfolio-content">
+  <div class="row">
+    <img src="Images/Figma 2.jpg" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">As a design technologist,we can turn your 
+      website/product into a smooth,easy and enjoyable for users.</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+  <div class="row">
+    <img src="Images/Figma 5.jpg" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">As a design technologist,we can turn your 
+      website/product into a smooth,easy and enjoyable for users.</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+</div>
+  </section>
+
+  <section class="portfolio" id="portfolio";>
+    <div class="text-title">
+    <h2>Graphics Design<span> Projects</span></h2>
+  </div>
+<div class="portfolio-content">
+  <div class="row">
+    <img src="Images/image3.png" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">You can trust us with your flyers,posters,logos,social media designs
+      brand identities etc.Let's create attractive designs that pass message quickly
+      for you.</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+  <div class="row">
+    <img src="Images/image2.png" alt="">
+    <div class="cover">Visual desings</div>
+    <div class="p">You can trust us with your flyers,posters,logos,social media designs
+      brand identities etc.Let's create attractive designs that pass message quickly
+      for you.</div>
+    <a href="#" class="bx bx-link-external"></a>
+  </div>
+</div>
+  </section>
+
+
+  
+
+  
+  <!.............Footer sessoin............>
+  <foooter class="footer">
+    <div class="attribution">
+      <p>Design with <i class="bx bx-heart"></i> By Heritage</p>
+    </div>
+    <div class="move-up">
+      <a href="#sub-header"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </foooter>
+
+   <!.............js for toggle menu............>
+   <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+      navLinks.style.right="0"; // slide in
+    }
+
+    function closeMenu(){
+      navLinks.style.right="-200px"; // slide out
+    }
+   </script>
+</body>
+</html>

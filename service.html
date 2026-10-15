@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewFYProject</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+</head>
+<body>
+     <!..............header.................>
+    <header class="header">
+  <div class="navmenu">
+     <a href="index.html" >
+        <img src="./Images/logo3.png" alt="logo" ></a>
+ <i class="bx bx-menu" id="menuBtn" onclick="openMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="bx bx-window-close" id="closeBtn" onclick="closeMenu()" ></i> 
+    </ul>
+</div>
+    </header> 
+
+  <!..............Sub-header sessoin.................>
+  <section class="sub-header" id="sub-header">
+<h1><span>My</span> Services</h1>
+  </section>
+  
+
+<!............. service ............>
+<section class="services" id="services">
+  <div class="text-title">
+    <h2><span>What I</span> Do</h2>
+  </div>
+  <div class="services-content">
+    <div class="box">
+      <div class="icon">
+        <i class="bx-code"></i>
+      </div>
+      <h3>Frontend Development</h3>
+      <p>I take beautiful UI designs and bring them to life with clear
+        functional code,using HTML,CSS and JavaScript. I make sure that every 
+        details is just right,so the final result is a seamless and user
+        friendly experience, from concept to completion. I'm here to make ypour
+        vision a reality.
+      </p>
+      <a href="#" class="btn" id="btn">Start a project</a>
+     </div>
+     <div class="box">
+      <div class="icon">
+        <i class="bx bx-device"></i>
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>Design is more than just making things look pretty.It's 
+        about solving problem in a ususal friendly way.That's 
+        why I approach UI/UX design with a focus on the end user,
+        creating interface that are intuitive and easy to use. Lets 
+        create an experience that delight your users and delight 
+        your goals.
+      </p>
+      <a href="#" class="btn" id="btn">Start a project</a>
+     </div>
+     <div class="box">
+      <div class="icon">
+        <i class="bx bx-pen"></i>
+      </div>
+      <h3>Graphics Design</h3>
+      <p>Good graphic design is more than just making things pretty.
+        It is about communicating idea and emotion through visual elements.
+        Whether it's a logo an illustration,or a complete brand identity.
+        I use my graphics design skills to create designs that are 
+        eye-catching and effective.
+      </p>
+      <a href="#" class="btn" id="btn">Start a project</a>
+     </div>
+  </section>
+
+  <section class="others" id="others">
+  <div class="sub-text-title">
+    <h2>Other <span>services</span></h2>
+  </div>
+  <div class="others-img">
+    <img src="./Images/image1.png" alt="">
+    <span class="circle-spin"></span>
+  </div>
+  <div class="othes-text">
+    <h3>Web development <span>training</span></h3><br>
+    <p>I'm passionate about helping people learn the skills they
+      need to succeed in the world of web development.My 
+    training courses focus on the basics of HTML,CSS and JavaScript giving 
+  students a solid foundation to build on.At the end of my courses,
+students have the tools they need to create their own websites 
+and start their own web development journeys. And they receive a certificate 
+of completion,so they can demonstrate their skills to
+potential employers or clients.</p>
+  </div>
+  <div> <a href="#" class="btn">Enrol Now</a></div>
+</section>
+
+
+  <!.............Footer sessoin............>
+  <foooter class="footer">
+    <div class="attribution">
+      <p>Design with <i class="bx bx-heart"></i> By Heritage</p>
+    </div>
+    <div class="move-up">
+      <a href="#sub-header"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </foooter>
+
+   <!.............js for toggle menu............>
+   <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+      navLinks.style.right="0"; // slide in
+    }
+
+    function closeMenu(){
+      navLinks.style.right="-200px"; // slide out
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewFYProject</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+</head>
+<body>
+     <!..............header.................>
+    <header class="header">
+  <div class="navmenu">
+     <a href="index.html" >
+        <img src="./Images/logo3.png" alt="logo" ></a>
+ <i class="bx bx-menu" id="menuBtn" onclick="openMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="bx bx-window-close" id="closeBtn" onclick="closeMenu()" ></i> 
+    </ul>
+</div>
+    </header>  
+
+  <!..............Sub-header sessoin.................>
+  <section>
+  <h1 class="h-contact">Contact <span>Me</span></h1>
+  </section>
+  
+
+<!............. Contact sessoin ............>
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.257141000356!2d4.613852472718752!3d8.474358191566477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364cc378174f1b%3A0x1549f7b889cd456f!2stanke%20bubu%20community%20primary%20school!5e0!3m2!1sen!2sng!4v1786123752935!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</section>
+  <section class="contact" id="contact" style="background-color: black;">
+    <div class="contact-text">
+      <h4 class="dot">Whatever your project might be......</h4>
+      <p>As a design technologist, I am skilled in the latest
+        design and development techniques,and I have a passion for 
+        creating unique and effective user experience.Let's talk 
+        about your  specific needs and see how I can help. 
+      </p>
+      <div class="list">
+        <li><a href="#">+237045028617</a></li>
+        <li><a href="#">inioluwaadebiyi9@gmail.com</a></li>
+        <li><a href="#">like ,comment and subscribe</a></li>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram.alt"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="">
+        <input type="name" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <input type="number" placeholder="Your mobile number" required>
+        <textarea name="" id="" cols="35" rows="10" placeholder="How can I help you?" required></textarea>
+        <input type="submit" value="send message" class="submit">
+      </form>
+    </div>
+  </section>
+
+
+  <!.............Footer sessoin............>
+  <foooter class="footer">
+    <div class="attribution">
+      <p>Design with <i class="bx bx-heart"></i> By Heritage</p>
+    </div>
+    <div class="move-up">
+      <a href="#sub-header"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </foooter>
+
+   <!.............js for toggle menu............>
+   <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+      navLinks.style.right="0"; // slide in
+    }
+
+    function closeMenu(){
+      navLinks.style.right="-200px"; // slide out
+    }
+   </script>
+</body>
+</html>
